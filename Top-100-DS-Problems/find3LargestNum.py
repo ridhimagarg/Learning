@@ -1,5 +1,7 @@
 ## Ex: [141,1,17,-7-17,-27,18,541,8,7,7] should return [18,141,154]
 
+## Time : O(n) | space: O(1)(three numbers which doesn't take much space)
+
 def findThreeLargestNum(array):
 
     largestNum = [None, None, None] ## contains element in increasing order smallest largest to largest largest
@@ -11,9 +13,10 @@ def findThreeLargestNum(array):
     return largestNum
 
 def updateLargest(largestNum, num):
-    ## This function will put the value at that index if current value in original array is greater than that index
+    ## This function will put the value at that index if current value in o  riginal array is greater than that index
     if largestNum[2] is None or num > largestNum[2]:
         shiftAndUpdate(largestNum, num, 2)
+    ## Imp: to keep this elif instead of if otherwise logic will be wrong.
     elif largestNum[1] is None or num > largestNum[1]:
         shiftAndUpdate(largestNum, num, 1)
     elif largestNum[0] is None or num > largestNum[0]:
