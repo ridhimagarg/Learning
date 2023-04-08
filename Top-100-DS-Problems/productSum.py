@@ -2,6 +2,7 @@
 # Solution 5 +2 + (Noe recursive caLL for [7,-1] -: (7+(-1))*2 = 12) +12 + 3 + (Now again recursive, 6 + again recursive(-13+8)*3= -15 + 4= -5*2= 10)+10
 
 ## Solving it with recusrion
+## Time: O(N) | Space: O(depth of the input array)
 def productSum(array, multiplier=1):
 
     sum = 0
