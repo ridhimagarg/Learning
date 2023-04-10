@@ -1,3 +1,5 @@
+
+## Worst: Time: O(N^2), Best: Time: O(nlog(N)), Space: O(log(N))
 def quickSort(array):
       quickSortHelper(array, 0, len(array)-1)
       return array
