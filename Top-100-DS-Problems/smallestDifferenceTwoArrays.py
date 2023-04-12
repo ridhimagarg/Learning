@@ -5,7 +5,7 @@ def smallestDiff(array1, array2):
     array1.sort()
     array2.sort()
     mindif = float("inf")
-    
+    smallestpair = []
     while idx1 < len(array1) and idx2 < len(array2):
         firstNum = array1[idx1]
         secondNum = array1[idx2]
@@ -21,6 +21,8 @@ def smallestDiff(array1, array2):
         if mindif > current:
             mindif = current
             smallestpair = [firstNum, secondNum]
-            
+
     return smallestpair
              
+
+print(smallestDiff([-1,5,10,20,28,3], [26,134,135,15,17]))
