@@ -8,7 +8,7 @@ def threeNumSum(array, targetSum):
         left = i +1
         right = len(array) -1
         while left < right: ## not putting = here because in the even/odd case we dont want overlap.
-            currentSum = array[i] + array[left] + array[right]
+            currentSum = array[i] +  [left] + array[right]
             if currentSum == targetSum:
                 triplets.append([array[i], array[left], array[right]])
                 ## we are not handling the duplicates over here. lets say  2 is repeated two times then we have to handle those cases..
