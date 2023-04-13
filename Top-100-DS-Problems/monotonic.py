@@ -15,7 +15,7 @@ def monotonic(array):
             return False
         
     return True
-             
+              
 def breaksDirection(direction, previousInt, currentInt):
 
     difference = currentInt - previousInt
