@@ -4,8 +4,11 @@ def powerOfTwo(n):
     if n==0:
         return 1
     
+    ## recursion relation
     smallerProblem = powerOfTwo(n-1)
     biggerProblem = 2*smallerProblem
+
+    ## no processing here like printing or something.
     
 
     return biggerProblem
@@ -28,14 +31,18 @@ print(factorial(0))
 
 def printNumOpporder(n):
 
+    ## base case
     if n == 0:
         print(0)
         return
     
+    ## provcessing
     print(n)
 
+    ## recursion relation
     printNumOpporder(n-1)
 
+print("Printing")
 printNumOpporder(4)
 
 def printNum(n):
@@ -47,4 +54,19 @@ def printNum(n):
 
     print(n)
 
+print("Printing num")
 printNum(4)
+
+def reachHome(src, dst):
+
+    if dst == src:
+        print(src)
+        return
+    
+    print(src)
+    src +=1
+
+    reachHome(src, dst)
+
+print("Ghar phauchna hai")
+reachHome(1, 10)
