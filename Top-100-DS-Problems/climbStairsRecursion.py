@@ -25,4 +25,5 @@ def countDistinctWayClimbStairs(nStairs):
     # print(ans)
     return ans
 
+
 print(countDistinctWayClimbStairs(5))
